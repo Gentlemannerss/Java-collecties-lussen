@@ -6,7 +6,7 @@ public class randomNumber {
         Random random = new Random();
 
         while (numbers.size() < 4) {
-            int randomNumber = random.nextInt(10) + 1; // generates a random number between 1 and 10
+            int randomNumber = random.nextInt(9) + 1; // generates a random number between 1 and 9
             numbers.add(randomNumber);
         }
 

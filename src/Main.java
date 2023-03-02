@@ -1,5 +1,4 @@
 import java.util.HashSet;
-import java.util.Random;
 import java.util.Objects;
 import java.util.Scanner;
 
@@ -30,7 +29,7 @@ public class Main {
                     System.out.println("Mini-game Time");
                     HashSet<Integer> secretNumber = randomNumber.randomNumberGenerator();
                     String stringNumber = randomNumber.setToString(secretNumber);
-                    System.out.println(stringNumber);
+                    System.out.println(stringNumber); //deze moet uitgecomment worden voor als je het spel echt wil spelen.
                     feedback(stringNumber);
                 } else {
                     System.out.println(invalid);
@@ -69,6 +68,7 @@ public class Main {
                 }
             }
             System.out.println(feedback.toString());
+            System.out.println("Helaas, verkeerd geraden. \n + betekent dat het cijfer juist is en op de juiste plek staat. \n O betekent een juist cijfer, maar verkeerde plek. \n X betekent dat het cijfer er niet in zit. \nProbeer nogmaals:");
             numGuesses++;
         }
         if (numGuesses == maxGuesses) {
