@@ -16,9 +16,15 @@ public class Main {
 
     }
 
+    public class Integer[] numeric = {1, 2, 3, 4, 5, 6, 7, 8, 9, 0};
+    public static final String[] alphabetic = {"een", "twee", "drie", "vier", "vijf", "zes", "zeven", "acht", "negen", "nul"};
+
+
+
     /*
      Deze methode is voor de bonus opdracht.
      */
+
     public static void feedback(String stringnumber) {
         Scanner scanner = new Scanner(System.in);
         StringBuilder feedback = new StringBuilder();
@@ -39,4 +45,5 @@ public class Main {
         }
         System.out.println(feedback.toString());
     }
+
 }
