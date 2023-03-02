@@ -66,9 +66,9 @@ public class Main {
                         feedback.append("X");
                     }
                 }
+                System.out.println("Helaas, verkeerd geraden. \n + betekent dat het cijfer juist is en op de juiste plek staat. \n O betekent een juist cijfer, maar verkeerde plek. \n X betekent dat het cijfer er niet in zit. \nProbeer nogmaals:");
             }
             System.out.println(feedback.toString());
-            System.out.println("Helaas, verkeerd geraden. \n + betekent dat het cijfer juist is en op de juiste plek staat. \n O betekent een juist cijfer, maar verkeerde plek. \n X betekent dat het cijfer er niet in zit. \nProbeer nogmaals:");
             numGuesses++;
         }
         if (numGuesses == maxGuesses) {
